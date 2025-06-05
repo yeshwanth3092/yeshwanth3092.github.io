@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Output</title>
 </head>
 <body>
 
@@ -12,16 +12,18 @@
     <input type="text" name="Password" id="t3" placeholder="Enter Password"><br><br>
     <button onclick="submitForm()" style="background-color: aqua;">Submit</button>
 
+    <p id="output"></p>
+
     <script>
         function submitForm() {
             const name = document.getElementById('t1').value;
             const roll = document.getElementById('t2').value;
             const password = document.getElementById('t3').value;
 
-            console.log("Name:", name);
-            console.log("Roll No:", roll);
-            console.log("Password:", password);
+            const result = `Name: ${name}<br>Roll No: ${roll}<br>Password: ${password}`;
+            document.getElementById('output').innerHTML = result;
         }
     </script>
+
 </body>
 </html>
