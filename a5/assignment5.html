@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="Name" id="t1" placeholder="Enter Name"><br><br>
+    <input type="text" name="Roll No" id="t2" placeholder="Enter Roll No"><br><br>
+    <input type="text" name="Password" id="t3" placeholder="Enter Password"><br><br>
+    <button onclick="submitForm()" style="background-color: aqua;">Submit</button>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('t1').value;
+            const roll = document.getElementById('t2').value;
+            const password = document.getElementById('t3').value;
+
+            console.log("Name:", name);
+            console.log("Roll No:", roll);
+            console.log("Password:", password);
+        }
+    </script>
+</body>
+</html>
